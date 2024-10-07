@@ -259,7 +259,7 @@ pub async fn mine(args: MineArgs, url: String , username: String)  {
 
                             let hash_time = hash_timer.elapsed();
 
-                            println!("gasgolekduit: {} , otw:{} , :{:?} , muleh:{:.3} k", best_difficulty,total,cuan_banter , ((total as f32)/hash_time.as_secs_f32())/1000.0 );
+                            println!("gasgolekduit: {} , otw:{} , :{:?} , muleh:{:.3} k", best_difficulty,total,hash_time , ((total as f32)/hash_time.as_secs_f32())/1000.0 );
 
                             let message_type =  2u8; // 1 u8 - BestSolution Message
                             let best_hash_bin = best_hash.d; // 16 u8
